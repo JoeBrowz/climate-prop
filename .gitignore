@@ -1,4 +1,6 @@
+data
 .DS_Store
+.keys
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
