@@ -33,7 +33,7 @@ Neural network and bring in emissions data
 
 ## Questions:
 Joe Marx—jmarx@hash.fyi
-- <a href='https://www.linkedin.com/in/joe-marx-260a64102/'>Joseph Marx</a>
+- <a href='https://www.linkedin.com/in/joe-marx-260a64102/'>LinkedIn</a>
 
 
 ## Sources
