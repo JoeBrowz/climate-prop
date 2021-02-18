@@ -2,7 +2,7 @@
 ![header](https://wp-krypton.s3.amazonaws.com/wp-content/uploads/sites/3/2019/11/climate-change-tree.jpg)
 
 ## Overview
-Twitter: the final frontier. Spend a few hours reading the tweets of the people and you too may deny that human's are intelligent beings. For all it's mess, Twitter is a trove of usable, immediate, actionable data on what people feel strongly about. This project seeks to leverage available data to understand the public conversation on climate change.
+Twitter: not the final frontier, but one of the loudest frontiers. For all it's mess, Twitter is a trove of usable, immediate, actionable data on what people feel strongly about. This project seeks to leverage available data to understand the public conversation on climate change.
 
 ## Business Problem
 As an environmental advocacy group, having real time information on what people are saying about the climate crisis can be an invaluable tool in making the case to lawmakers, corporations, and, individuals that the will of the people is to take action on climate change. Having a pipeline that can gather tweets on climate change, classify them as believer or denier, then run sentiment analysis on the various groups can empower an organization with this immediate data. 
@@ -13,14 +13,14 @@ For this project data was classified by training a portion of the GW Libraries' 
 Tweets were parsed and cleaned...
 
 ## Model
-Model was trained using a GridSearchCV pipeline using TF-IDF Vectorization and a Random Forest Classifier. Accuracy and F1 scores were both quite high on the training and testing data, meaning both precision and recall are high. When tested on a data from a different dataset, with target variables classified using a different method, the model performed acceptably, though it didn't predict negative cases very well.
+Data was trained using several GridSearchCV models using TF-IDF Vectorization and Logistic Regression, Gradient Boosted Trees (based on LightGBM technique), and Random Forest Classifiers. Accuracy and F1 scores were both quite high on the training and testing data, meaning both precision and recall are high. When tested on a data from a different dataset, with target variables classified using a different method, the model performed acceptably, though it didn't predict negative cases very well.
 
 ![val_mat](/images/val_mat.jpg)
 
 ## Conclusion
-This was aight but could be better
+Using TF-IDF has shortcomings that can't be fully dealt with using linear and ensemble modeling. The dramatic class imbalance fogs the ability to discern what is holding the model back: modeling techniques, the data itself, or the mathematical realities a class imbalance causes. However, putting aside the shortcomings, the model does have excellent metrics, achieving over 90% accuracy and F1 scoring on all of the best parameter models for each classifier type.
 ## Next Steps
-Neural network and bring in emissions data
+A likely cure for the shortcomings of the modeling methods used thus far would be implementation of a recursive neural network built with transfer learning. Better handling class imbalance and allowing contextual memory would likely improve performance on the predicting minority class cases. Implementation of this in addition to feature engineering using other tweet metadata, utlizing a larger share of the dataset, more robust sentiment analysis, and importing and analyzing CO2 emissions data in relation to the climate conversation on twitter is all on the to-do list for this project's next steps.
 ## File Structure:
 ```
 ├── README.md                      <- the top-level README for reviewers of this project
@@ -31,10 +31,11 @@ Neural network and bring in emissions data
 └── images                         <- both sourced externally and generated from code
 ```
 
-## Questions:
+## For Inquiries:
 Joe Marx—jmarx@hash.fyi
 - <a href='https://www.linkedin.com/in/joe-marx-260a64102/'>LinkedIn</a>
 
 
 ## Sources
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5QCCUU
+https://www.kaggle.com/edqian/twitter-climate-change-sentiment-dataset
