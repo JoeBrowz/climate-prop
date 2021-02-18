@@ -10,9 +10,11 @@ As an environmental advocacy group, having real time information on what people 
 <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/class.jpg?raw=true" width="40%">
 
 ## Data
-For this project data was classified by training a portion of the GW Libraries' "Climate Change Tweets Ids" dataset, which gives the Twitter Ids of nearly 40 million tweets on climate change. The dataset was hydrated using Twarc and the Twitter Developer APIs, split into manageable file sizes then imported in a `for` loop and reconcatenated using the Pandas package.
+For this project data was classified by training a portion of the GW Libraries' "Climate Change Tweets Ids" dataset, which gives the Twitter Ids of nearly 40 million tweets on climate change. The dataset was hydrated using Twarc and the Twitter Developer APIs, split into manageable file sizes then imported in a `for` loop and reconcatenated using the Pandas package. Target variable was created by coercing embedded hashtag data from the API response. 
 
 <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_bel.jpg?raw=true" width="40%" class="center"> <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_den.jpg?raw=true" width="40%" class="center">
+
+Data was cleaned using Regular Expression and the nltk package, assisted by domain knowlege and findings from exploratory data analysis, stop words were determined, tweets were lemmatized, and prepped for modeling. 
 
 
 
@@ -28,11 +30,12 @@ A likely cure for the shortcomings of the modeling methods used thus far would b
 ## File Structure:
 ```
 ├── README.md                      <- the top-level README for reviewers of this project
-├── EDA_notebook.ipynb             <- data cleaning, EDA, feature engineering/selection
+├── data_wrangle.ipynb             <- data collection, organization and concatenating
+├── EDA_notebook.ipynb             <- data cleaning, EDA, light visualization
 ├── modeling_notebook.ipynb        <- notebook containing all elements of model
-├── data                           <- dataset files
+├── data                           <- dataset files not hosted on github due to size constraints 
 ├── summary_presentation.pdf       <- a pdf of the project presentation
-└── images                         <- both sourced externally and generated from code
+└── images                         <- generated from code for use in readme and presentation slides
 ```
 
 ## For Inquiries:
