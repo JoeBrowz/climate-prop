@@ -8,8 +8,10 @@ Twitter: not the final frontier, but one of the loudest frontiers. For all it's 
 As an environmental advocacy group, having real time information on what people are saying about the climate crisis can be an invaluable tool in making the case to lawmakers, corporations, and, individuals that the will of the people is to take action on climate change. Having a pipeline that can gather tweets on climate change, classify them as believer or denier, then run sentiment analysis on the various groups can empower an organization with this immediate data. 
 
 <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/class.jpg?raw=true" width="40%">
+
 ## Data
 For this project data was classified by training a portion of the GW Libraries' "Climate Change Tweets Ids" dataset, which gives the Twitter Ids of nearly 40 million tweets on climate change. The dataset was hydrated using Twarc and the Twitter Developer APIs, split into manageable file sizes then imported in a `for` loop and reconcatenated using the Pandas package.
+
 <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_bel.jpg?raw=true" width="40%" class="center">
 <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_den.jpg?raw=true" width="40%" class="center">
 
