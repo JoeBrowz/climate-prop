@@ -19,6 +19,14 @@ import string
 from nltk import word_tokenize, FreqDist
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
+import tensorflow as tf
+import tensorflow_hub as hub
+import tensorflow_text as text
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras.metrics import BinaryAccuracy, Recall, AUC
+
+
 def re_clean(tweet):
     '''
     takes the text of a tweet and returns a cleaned string ready for tokenization and lemmatization 
