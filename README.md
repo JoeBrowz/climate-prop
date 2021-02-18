@@ -19,7 +19,8 @@ Data was cleaned using Regular Expression and the nltk package, assisted by doma
 # Model
 Data was trained using several GridSearchCV models using TF-IDF Vectorization and Logistic Regression, Gradient Boosted Trees (based on LightGBM technique), and Random Forest Classifiers. Accuracy and F1 scores were both quite high on the training and testing data, meaning both precision and recall are high. When tested on a data from a different dataset, with target variables classified using a different method, the model performed acceptably, though it didn't predict negative cases very well.
 
-![val_mat](/images/val_mat.jpg)
+![lr1](/images/mat/lr1.jpg) ![lr2](/images/mat/lr2.jpg)
+![lr1_val](/images/mat/lr1_val.jpg) ![lr2_val](/images/mat/lr2_val.jpg)
 
 # Conclusion
 Using TF-IDF has shortcomings that can't be fully dealt with using linear and ensemble modeling. The dramatic class imbalance fogs the ability to discern what is holding the model back: modeling techniques, the data itself, or the mathematical realities a class imbalance causes. However, putting aside the shortcomings, the model does have excellent metrics, achieving over 90% accuracy and F1 scoring on all of the best parameter models for each classifier type.
