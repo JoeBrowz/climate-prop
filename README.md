@@ -2,7 +2,7 @@
 ![header](https://wp-krypton.s3.amazonaws.com/wp-content/uploads/sites/3/2019/11/climate-change-tree.jpg)
 
 ## Overview
-Twitter: not the final frontier, but one of the loudest frontiers. For all it's mess, Twitter is a trove of usable, immediate, actionable data on what people feel strongly about. This project seeks to leverage available data to understand the public conversation on climate change.
+Twitter: not the final frontier, but one of the loudest frontiers. Twitter is a platform that allows users to share thoughts, ideas, resources, and news. With over 300 million active users, and billions of queries per day, Twitter is a trove of usable, immediate, actionable data on what people feel strongly about. This project seeks to leverage available data to understand the public conversation on climate change. 
 
 ## Business Problem
 As an environmental advocacy group, having real time information on what people are saying about the climate crisis can be an invaluable tool in making the case to lawmakers, corporations, and, individuals that the will of the people is to take action on climate change. Having a pipeline that can gather tweets on climate change, classify them as believer or denier, then run sentiment analysis on the various groups can empower an organization with this immediate data. 
