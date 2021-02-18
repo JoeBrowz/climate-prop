@@ -12,8 +12,7 @@ As an environmental advocacy group, having real time information on what people 
 ## Data
 For this project data was classified by training a portion of the GW Libraries' "Climate Change Tweets Ids" dataset, which gives the Twitter Ids of nearly 40 million tweets on climate change. The dataset was hydrated using Twarc and the Twitter Developer APIs, split into manageable file sizes then imported in a `for` loop and reconcatenated using the Pandas package.
 
-<img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_bel.jpg?raw=true" width="40%" class="center">
-<img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_den.jpg?raw=true" width="40%" class="center">
+<img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_bel.jpg?raw=true" width="40%" class="center"> <img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/wc_den.jpg?raw=true" width="40%" class="center">
 
 
 
