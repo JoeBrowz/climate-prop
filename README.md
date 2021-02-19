@@ -24,8 +24,15 @@ Data was trained using several GridSearchCV models using TF-IDF Vectorization an
 
 # Conclusion
 Using TF-IDF has shortcomings that can't be fully dealt with using linear and ensemble modeling. The dramatic class imbalance fogs the ability to discern what is holding the model back: modeling techniques, the data itself, or the mathematical realities a class imbalance causes. However, putting aside the shortcomings, the model does have excellent metrics, achieving over 90% accuracy and F1 scoring on all of the best parameter models for each classifier type.
+
 ## Next Steps
 A likely cure for the shortcomings of the modeling methods used thus far would be implementation of a recursive neural network built with transfer learning. Better handling class imbalance and allowing contextual memory would likely improve performance on the predicting minority class cases. Implementation of this in addition to feature engineering using other tweet metadata, utlizing a larger share of the dataset, more robust sentiment analysis, and importing and analyzing CO2 emissions data in relation to the climate conversation on twitter is all on the to-do list for this project's next steps.
+
+### Web App
+A streamlit webapp was built that receives the text of a tweet and outputs its classification as either a climate believer's or denier's tweet.
+
+![streamlit](/images/streamlit.gif)
+
 ## File Structure:
 ```
 ├── README.md                      <- the top-level README for reviewers of this project
