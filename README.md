@@ -31,7 +31,7 @@ A likely cure for the shortcomings of the modeling methods used thus far would b
 ### Web App
 A streamlit webapp was built that receives the text of a tweet and outputs its classification as either a climate believer's or denier's tweet.
 
-![streamlit](/images/streamlit.gif)
+<img src="https://github.com/JoeBrowz/climate_prop/blob/main/images/stremlit.gif?raw=true">
 
 ## File Structure:
 ```
