@@ -45,7 +45,7 @@ A streamlit webapp was built that receives the text of a tweet and outputs its c
 ```
 
 ## For Inquiries:
-Joe Marx—jmarx@hash.fyi
+- josephlmarx@gmail.com
 - <a href='https://www.linkedin.com/in/joe-marx-260a64102/'>LinkedIn</a>
 
 
