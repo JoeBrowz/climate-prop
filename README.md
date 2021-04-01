@@ -40,7 +40,8 @@ A streamlit webapp was built that receives the text of a tweet and outputs its c
 ├── EDA_notebook.ipynb             <- data cleaning, EDA, light visualization
 ├── modeling_notebook.ipynb        <- notebook containing all elements of model
 ├── data                           <- dataset files not hosted on github due to size constraints 
-├── summary_presentation.pdf       <- a pdf of the project presentation
+├── Classifying-Climate-Tweets...  <- a pdf of the project presentation
+├── streamlit.py.                  <- python generated webapp for use locally
 └── images                         <- generated from code for use in readme and presentation slides
 ```
 
